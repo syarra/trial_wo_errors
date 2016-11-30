@@ -1,7 +1,7 @@
 % add the paths
 addpath(genpath('/var/lib/jenkins/MOcov'))
 addpath(genpath('/var/lib/jenkins/jsonlab'))
-addpath(genpath('/var/lib/jenkins/workspace/TrialWithoutErrors'))
+addpath(genpath('../'))
 
 % add GUROBI
 addpath(genpath('/opt/gurobi650'))

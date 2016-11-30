@@ -1,4 +1,4 @@
-[![codecov](https://codecov.io/gh/cobrabot/trial_and_errors/branch/master/graph/badge.svg)](https://codecov.io/gh/cobrabot/trial_and_errors)
+[![codecov](https://codecov.io/gh/cobrabot/trial_wo_errors/branch/master/graph/badge.svg)](https://codecov.io/gh/cobrabot/trial_wo_errors)
 
 
 | MATLAB | Status |
