@@ -1,7 +1,11 @@
 % add the paths
+pwd
+
 addpath(genpath('/var/lib/jenkins/MOcov'))
 addpath(genpath('/var/lib/jenkins/jsonlab'))
 addpath(genpath('../'))
+
+system('which testRightTri')
 
 % add GUROBI
 addpath(genpath('/opt/gurobi650'))
