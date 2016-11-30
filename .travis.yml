@@ -1,0 +1,43 @@
+language: bash
+
+# run all tests and coverage on SnowWhite
+#branches:
+#  only:
+#  - master
+#  - develop
+
+#git:
+#    depth: 99999
+
+before_install:
+    - if [[ -a .git/shallow ]]; then git fetch --unshallow; fi
+
+#before_install:
+#    - git rm --cached binary
+#    - git rm --cached external/SBMLToolbox
+#    - git rm --cached external/lusol
+#    - git rm --cached external/pdco
+#    - git rm --cached external/Smith-Decomposition
+#    - git submodule update --force --init --recursive
+
+#matrix:
+#  include:
+
+#  allow_failures:
+
+#env:
+
+script:
+    - pwd
+    #- export MATLAB_VER=R2016b
+    #- sh ./runtests.sh
+    #- export MATLAB_VER=R2015b
+    #- sh ./runtests.sh
+    #- export MATLAB_VER=R2014b
+    - sh ./runtests.sh
+
+#deploy:
+
+after_success:
+    - bash <(curl -s https://codecov.io/bash) #-B ${env.BRANCH_NAME}
+    #- curl --verbose -F json_file=@`pwd`/coverage.json https://coveralls.io/api/v1/jobs
