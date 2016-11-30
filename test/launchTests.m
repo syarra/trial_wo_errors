@@ -1,11 +1,12 @@
 % add the paths
 pwd
 
+% do not change the paths below
 addpath(genpath('/var/lib/jenkins/MOcov'))
 addpath(genpath('/var/lib/jenkins/jsonlab'))
-addpath(genpath('../'))
+addpath(genpath('.')) % include the root folder and all subfolders
 
-system('which testRightTri')
+which testRightTri.m
 
 % add GUROBI
 addpath(genpath('/opt/gurobi650'))
