@@ -35,7 +35,7 @@ assert(abs(angles(1)-30) <= tol)
 assert(abs(angles(2)-60) <= tol)
 assert(abs(angles(3)-90) <= tol)
 
-% Test 4: Small angle approximation
+%% Test 4: Small angle approximation
 angles = rightTri(triSkewed);
 smallAngle = (pi/180)*angles(1); % radians
 approx = sin(smallAngle);
